@@ -1,7 +1,5 @@
 const hashSum = require('hash-sum');
 
-exports.keys = 'saassd';
-
 exports.sequelize = {
   define: {
     freezeTableName: true,
