@@ -1,0 +1,28 @@
+{
+  "name": "@mingdev/egg-model",
+  "version": "1.0.0",
+  "author": "mingdev <mingdev@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "egg-bin dev",
+    "generate-models": "sequelize-auto -o './app/entity' -d article_db -h localhost -u root -p 3306 -x helloworld123 -e mysql --noInitModels"
+  },
+  "homepage": "https://github.com/imingdev/mingdev-egg-model",
+  "dependencies": {
+    "egg-sequelize": "^6.0.0",
+    "hash-sum": "^2.0.0",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "egg": "^2.29.4",
+    "egg-bin": "^4.16.4",
+    "eslint": "^7.32.0",
+    "eslint-config-egg": "^9.0.0",
+    "sequelize-auto": "^0.8.3"
+  },
+  "files": [
+    "app/entity/",
+    "app/model",
+    "config"
+  ]
+}
